@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: rgb(0, 0, 0);
+  background-color: rgb(76, 149, 221);
+  font-family: border;
+  font-size: 14px;
+  line-height: 2;
+}
+
+/*
+  Estilizando o formulario
+*/
+
+.form-header h1 {
+  text-align: center;
+  font-size: 48px;
+}
+
+.box-style {
+  background-color: white;
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 3px;
+  width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.line-content{
+  margin: 10px;
+  margin-bottom: 10px;
+}
+
+.line-content input[type='text']{
+  width: 80%;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.fieldset{
+  padding: 10px;
+  border: 1px solid rgb(214, 217, 220);
+}
+
+.abstract-style {
+  width: 100%;
+  height: 60px;
+  resize: none;
+  /*
+  Resize: none -> Bloqueia a movimentação pelo usuario
+  */
+}

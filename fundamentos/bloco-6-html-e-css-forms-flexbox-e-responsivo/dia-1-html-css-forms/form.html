@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloco 6 - dia 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="form-header box-style">
+    <!-- coloquei dois nomes de classes para estilização -->
+    <h1>Formulário</h1>
+    
+    <form action="" method="GET" class="box-style">
+
+      <!--NOME -->
+      <div class="line-content">
+        <label for="input-nome">Nome</label>
+          <!--Acrescentei a label para ficar mais facil, pois clicando no texto ela já coloca na caixinha pronta para digitar-->
+        <input type="text" placeholder="Digite seu nome completo" required id="input-nome" name="nome" maxlength="40" autocomplete="off">
+      </div>
+
+    <!--E-MAIL -->
+      <div class="line-content">
+        <label for="input-email">E-mail</label>
+        <input type="email" placeholder="Digite seu e-mail" required id="input-email" name="e-mail" maxlength="50" autocomplete="off">
+      </div>
+
+    <!--CPF -->
+      <div class="line-content">
+        <label for="input-cpf">CPF</label>
+        <input type="text" placeholder="Apenas numeros" required id="input-cpf" maxlength="11" name="CPF" autocomplete="off">
+      </div>     
+
+    <!--ENDERECO-->
+      <div class="line-content">
+        <label for="input-endereco">Endereço</label>
+        <input type="text" placeholder="Rua, numero, complemento" required id="input-endereco" maxlength="200" name="endereco" autocomplete="off">
+      </div>
+    
+    <!--CIDADE-->
+      <div class="line-content">
+        <label for="input-cidade">Cidade</label>
+        <input type="text" placeholder="Cidade" required id="input-cidade" maxlength="28" name="endereco" autocomplete="off">
+      </div>
+
+    <!--ESTADO-->
+      <div class="line-content">
+        <select name="estado" id="estado" required>
+        </select>
+      </div>
+    
+    <!--TIPO -->
+      <div class="line-content">
+        <fieldset class="fieldset">
+          <legend>Tipo de Moradia</legend>
+          <input type="radio" id="casa" name="talk-type" value="casa" required>
+          <label for="casa">Casa</label>
+
+          <input type="radio" id="apartamento" name="talk-type" value="apartamento">
+          <label for="apartamento">Apartamento</label>
+          <!-- Mesmo name para estarem relacionadas, assim só pode marcar uma unica opção -->
+        </fieldset>
+      </div>
+
+      <!--Resumo do currículo -->
+      <div class="line-content">
+        <fieldset class="fieldset">
+          <div>
+            <label for="abstract-1">Resumo do currículo</label>
+            <textarea class="abstract-style" name="curriculo" id="abstract-1" cols="30" rows="10" required maxlength="1000">Faça uma breve descrição do seu currículo</textarea>
+          </div>
+
+          <div class="line-content">
+            <label for="input-cargo">Cargo</label>
+            <input type="text" placeholder="Digite seu cargo" required id="input-cargo" maxlength="40" name="cargo" autocomplete="off">
+          </div>
+
+          <div class="line-content">
+            <label for="input-descricaocargo">Descrição do Cargo</label>
+            <input type="text" placeholder="Breve descrição do cargo" required id="input-descricaocargo" maxlength="500" name="descricaocargo" autocomplete="off">
+          </div>
+
+          <div class="line-content">
+            <label for="input-datainicio">Data de Inicio</label>
+            <input type="text" placeholder="Data de inicio do cargo" required id="input-datainicio" name="datainicio" autocomplete="off">
+          </div>
+
+        </fieldset>
+      </div>
+
+
+  
+    <!--TAMANHO DA CAMISETA
+      <div class="line-content">
+        <label for="t-shirt">Tamanho da camiseta</label>
+        <select name="tamanho" id="t-shirt">
+          <option value="p">Pequena</option>
+          <option value="m">Média</option>
+          <option value="g">Grande</option>
+          <option value="xg">Extra grande</option>
+        </select>
+      </div>
+    
+    -->
+
+    <!--Descrição da Palestra
+      <div class="line-content">
+        <label for="abstract-2">Descrição da Palestra</label>
+        <textarea class="abstract-style" name="abstract" id="abstract-2" cols="30" rows="10">Faça uma breve descrição da palestra</textarea>
+      </div>
+    -->
+
+    <!--DISPONIBILIDADE NA DATA?
+      <div class="line-content">
+        <input type="checkbox" id="check-1" name="check">
+        <label for="check-1">Estou disponivel nessa data</label>
+      </div>
+    -->
+
+
+    <!--BOTÃO ENVIAR e LIMPAR-->
+      <div class="line-content">
+        <button id="botaoEnviar">Enviar</button>
+        <button id="botaoLimpar">Limpar</button>
+      </div>
+
+    </form>
+
+  </header>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>

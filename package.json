@@ -1,0 +1,23 @@
+{
+  "name": "trybe-exercicios",
+  "version": "1.0.0",
+  "main": "1309exquentaprojeto.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Recfs235/trybe-exercicios.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Recfs235/trybe-exercicios/issues"
+  },
+  "homepage": "https://github.com/Recfs235/trybe-exercicios#readme",
+  "description": "",
+  "devDependencies": {
+    "jest": "^27.4.0"
+  }
+}
